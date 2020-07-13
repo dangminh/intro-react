@@ -28,6 +28,7 @@ class App extends React.Component {
 
   /*Check out this addAssignment method*/
   addAssignment(assignmentName) {
+    console.log(assignmentName);
     this.setState({
       assignments: this.state.assignments.concat(assignmentName)
     });
@@ -50,7 +51,7 @@ class App extends React.Component {
     let tabChoice = <div />;
 
     /*Uncomment below to render assignments*/
-    /*if (this.state.buttonClicked === "assignments") {
+    if (this.state.buttonClicked === "assignments") {
       tabChoice = (
         <List
           placeholder="Add Assignment..."
@@ -59,7 +60,7 @@ class App extends React.Component {
           title="Assignments"
         />
       );
-    }*/
+    }
 
     /* Change below to render students*/
 
