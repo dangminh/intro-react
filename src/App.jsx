@@ -8,12 +8,11 @@ class App extends React.Component {
     super(props);
 
     this.state = {
+      students: [],
       buttonClicked: "",
       assignments: [] /*Below this line, add the students state variable*/,
       grades: {}
     };
-
-    this.students = [];
 
     this.handleButtonClicked = this.handleButtonClicked.bind(this);
     this.addAssignment = this.addAssignment.bind(this);
@@ -30,7 +29,6 @@ class App extends React.Component {
 
   /*Check out this addAssignment method*/
   addAssignment(assignmentName) {
-    console.log(assignmentName);
     this.setState({
       assignments: this.state.assignments.concat(assignmentName)
     });
