@@ -13,6 +13,8 @@ class App extends React.Component {
       grades: {}
     };
 
+    this.students = [];
+
     this.handleButtonClicked = this.handleButtonClicked.bind(this);
     this.addAssignment = this.addAssignment.bind(this);
     /*Uncomment the line below to bind the method*/
